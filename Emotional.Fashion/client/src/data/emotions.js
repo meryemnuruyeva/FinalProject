@@ -1,30 +1,34 @@
+import betrayalImg from "../assets/images/betrayal.jpg";
+import powerImg from "../assets/images/power.jpg";
+import confidenceImg from "../assets/images/confidence.jpg";
+import freedomImg from "../assets/images/freedom.jpg";
 const emotions = [
   {
     id: 1,
     title: "Betrayal",
     description: "Internal breakdown and distrust",
-    image: "/images/betrayal.jpg",
+    image: betrayalImg,
     date: "10 FEB"
   },
   {
     id: 2,
     title: "Power",
     description: "Strength and authority",
-    image: "/images/power.jpg",
+    image: powerImg,
     date: "6 MAR"
   },
   {
     id: 3,
     title: "Confidence",
     description: "Internal peace",
-    image: "/images/confidence.jpg",
+    image: confidenceImg,
     date: "27 MAR"
   },
   {
     id: 4,
     title: "Freedom",
     description: "Liberty",
-    image: "/images/freedom.jpg",
+    image: freedomImg,
     date: "1 APR"
   },
   {

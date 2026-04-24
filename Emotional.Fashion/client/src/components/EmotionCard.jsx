@@ -1,18 +1,25 @@
 import React from "react";
 
-const EmotionCard = ({ emotion }) => {
-    return (
-        <div className="emotion-card">
-            <img src="{emotion.image}" alt="{emotion.title}" />
+const EmotionCard = ({ title, image }) => {
+  return (
+    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition duration-300">
+      
+      <img 
+        src={image} 
+        alt={title} 
+        className="w-full h-48 object-cover"
+      />
 
-            <div className="emotion-content">
-                <h3>{emotion.title}</h3>
-                <h4>{emotion.subtitle}</h4>
-                <p>{emotion.description}</p>
-                <button>Explore</button>
-            </div>
-        </div>
-    );
+      <div className="p-4 text-center">
+        <h3 className="text-lg font-semibold mb-2">{title}</h3>
+
+        <button className="px-4 py-2 bg-black text-white rounded-lg text-sm">
+          START FEELING
+        </button>
+      </div>
+
+    </div>
+  );
 };
 
 export default EmotionCard;

@@ -1,3 +1,5 @@
+
+
 const Navbar = () => {
     return (
         <div className="bg-white text-black">
@@ -24,6 +26,8 @@ const Navbar = () => {
                 <a href="#" className="hover:text-[#FFD700] transition duration-300">PAGES</a>
                 <a href="#" className="hover:text-[#FFD700] transition duration-300">CATEGORIES</a>
             </div>
+
+            
         </div>
     );
 };
