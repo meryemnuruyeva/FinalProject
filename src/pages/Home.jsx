@@ -6,6 +6,7 @@ import HeroVideo from "../components/HeroVideo";
 import FeaturedSlider from "../pages/FeaturedSlider";
 import EmotinBlogSection from "../components/EmotinBlogSection";
 import DesignCard from "../components/DesignCard";
+import BlogSection from "../components/BlogSection";
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <FeaturedSlider/>
             <EmotinBlogSection/>
             <DesignCard/>
+            <BlogSection/>
         </div>
     );
 };
