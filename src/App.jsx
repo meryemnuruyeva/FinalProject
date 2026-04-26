@@ -12,7 +12,9 @@ function App() {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
+      <FeaturedSlider />
+
     </>
   )
 }
