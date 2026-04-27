@@ -1,22 +1,26 @@
 
 import React, { useState } from "react";
 
+import img1 from "../../assets/images/slider8.jpeg";
+import img2 from "../../assets/images/slide4.jpeg";
+import img3 from "../../assets/images/slider3.jpeg";
+
 const slides = [
     {
         id: 1,
-        image: "",
+        image: img1,
         title: "Betrayal to Strength",
         subtitle: "Every broken piece creates new power",
     },
     {
         id: 2,
-        image: "",
+        image: img2,
         title: "Confidence & Freedom",
         subtitle: "True beauty begins when you trust yourself",
     },
     {
         id: 3,
-        image: "",
+        image: img3,
         title: "Reborn Again",
         subtitle: "From pain rises a brighter soul",
     },
