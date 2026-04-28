@@ -1,9 +1,8 @@
+import React, { useState, useEffect } from "react";
 
-import React, { useState } from "react";
-
-import img1 from "../../assets/images/slider8.jpeg";
-import img2 from "../../assets/images/slide4.jpeg";
-import img3 from "../../assets/images/slider3.jpeg";
+import img1 from "../../assets/images/slide4.jpeg";
+import img2 from "../../assets/images/slider21.jpg";
+import img3 from "../../assets/images/slider22.jpg";
 
 const slides = [
     {
@@ -29,26 +28,49 @@ const slides = [
 const FeaturedSlider = () => {
     const [index, setIndex] = useState(0);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev + 1) % slides.length);
+        }, 4000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section className="w-full bg-black py-10">
 
-            {/* SLIDER */}
             <div className="relative w-[90%] mx-auto h-[500px] overflow-hidden">
 
-                <img src={slides[index].image} className="w-full h-full object-cover" />
+                {/* IMAGES */}
+                {slides.map((slide, i) => (
+                    <img
+                        key={slide.id}
+                        src={slide.image}
+                        className={`absolute w-full h-full object-cover transition-all duration-[4000ms]
+                        ${i === index ? "opacity-100 scale-110 z-10" : "opacity-0 scale-100 z-0"}`}
+                    />
+                ))}
 
                 {/* overlay */}
-                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute inset-0 bg-black/40 z-20"></div>
 
-                
-                {/* text */}
-                <div className="absolute bottom-10 left-10 text-yellow">
-                    <h2 className="text-5xl font-bold mb-2">
+                {/* TEXT (LUXURY SILVER) */}
+                <div className="absolute bottom-10 left-10 z-30">
+
+                    <h2 className="text-5xl font-bold mb-2 tracking-wide
+                    bg-gradient-to-r from-[#C0C0C0] via-[#FFFFFF] to-[#A9A9A9]
+                    bg-clip-text text-transparent
+                    drop-shadow-[0_0_12px_rgba(200,200,255,0.6)]">
                         {slides[index].title}
                     </h2>
-                    <h3 className="text-3xl font-serif">
+
+                    <h3 className="text-2xl font-serif tracking-wide
+                    bg-gradient-to-r from-[#E0E0E0] to-[#C0C0C0]
+                    bg-clip-text text-transparent
+                    drop-shadow-[0_0_8px_rgba(200,200,255,0.5)]">
                         {slides[index].subtitle}
                     </h3>
+
                 </div>
 
             </div>
@@ -59,8 +81,8 @@ const FeaturedSlider = () => {
                     <div
                         key={i}
                         onClick={() => setIndex(i)}
-                        className={`w-3 h-3 rounded-full cursor-pointer ${i === index ? "bg-[#D4AF37]" : "bg-gray-500"
-                            }`}
+                        className={`w-3 h-3 rounded-full cursor-pointer transition-all
+                        ${i === index ? "bg-white scale-125" : "bg-gray-500"}`}
                     />
                 ))}
             </div>
