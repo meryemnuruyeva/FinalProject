@@ -3,3 +3,97 @@
 .luxury-font {
   font-family: 'Playfair Display', serif;
 }
+.design-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.image-wrapper {
+  position: relative;
+  height: 420px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.6s ease;
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+/* DATE */
+.date-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #d4af37; /* gold */
+  font-family: serif;
+}
+
+.date-badge span {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+.date-badge small {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+/* CONTENT */
+.content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+.content h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-family: "Playfair Display", serif;
+}
+
+.content p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #d4af37;
+}
+
+/* HOVER EFFECT */
+.design-card:hover img {
+  transform: scale(1.08);
+}
+
+.design-card:hover .overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.design-card:hover .read-more {
+  letter-spacing: 4px;
+}
