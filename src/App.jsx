@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Navbar from './components/layout/Navbar'
-
+import "./styles/global.css";
 
 import './App.css'
 
@@ -14,6 +14,7 @@ function App() {
     <>
       <Navbar />
       <FeaturedSlider />
+      <EmotionIntro />
 
     </>
   )

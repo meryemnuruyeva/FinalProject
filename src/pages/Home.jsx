@@ -1,6 +1,7 @@
 import React from "react";
 import FeaturedSlider from "../components/shared/FeaturedSlider";
 import DesignCard from "../components/shared/DesignCard";
+import EmotionIntro from "../components/shared/EmotionIntro";
 
 import img1 from "../assets/images/img1.jpg";
 import img2 from "../assets/images/img2.jpg";
@@ -31,6 +32,7 @@ const Home = () => {
     return (
         <div className="bg-black text-white">
             <FeaturedSlider />
+            <EmotionIntro />
 
             {/* CARD SECTION */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-10">
