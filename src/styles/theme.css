@@ -97,3 +97,80 @@
 .design-card:hover .read-more {
   letter-spacing: 4px;
 }
+/* FEATURED SECTION */
+.featured-section {
+  padding: 120px 5%;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+/* TITLE */
+.featured-header h2 {
+  color: #e6d3a3;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.featured-header .line {
+  width: 80px;
+  height: 2px;
+  background: #e6d3a3;
+  margin: 15px auto 50px;
+}
+
+/* GRID */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.featured-card {
+  overflow: hidden;
+}
+
+.featured-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.featured-card:hover img {
+  transform: scale(1.05);
+}
+
+/* QUOTE */
+.featured-quote {
+  margin-top: 80px;
+}
+
+.featured-quote h3 {
+  font-size: 30px;
+  color: #e6d3a3;
+  margin-bottom: 15px;
+}
+
+.featured-quote p {
+  color: #aaa;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+/* BUTTON */
+.explore-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #e6d3a3, #c9a96e);
+  border: none;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  opacity: 0.8;
+}
