@@ -1,13 +1,15 @@
-import Navbar from "../components/layout/Navbar";
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
+import Navbar from '../components/layout/Navbar';
+import Footer from '../components/layout/Footer';
 
-const MainLayout = () => {
+export default function MainLayout() {
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="main-layout">
       <Navbar />
-      <Outlet />
+      <main className="main-content">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
-};
-
-export default MainLayout;
+}

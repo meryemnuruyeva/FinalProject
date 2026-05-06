@@ -1,53 +1,46 @@
-import React from "react";
-import FeaturedSlider from "../components/shared/FeaturedSlider";
-import DesignCard from "../components/shared/DesignCard";
-import EmotionIntro from "../components/shared/EmotionIntro";
-import FeaturedDesigns from "../components/shared/FeaturedDesigns";
+import HeroVideo from '../components/shared/HeroVideo';
+import FeaturedSlider from '../components/shared/FeaturedSlider';
+import EmotionIntro from '../components/shared/EmotionIntro';
 
-import img1 from "../assets/images/img1.jpg";
-import img2 from "../assets/images/img2.jpg";
-import img3 from "../assets/images/img3.jpg";
-
-const Home = () => {
-  const cards = [
+export default function Home() {
+  const featuredDesigns = [
     {
-      image: img1,
-      date: { day: "30", month: "NOV" },
-      title: "The Secrets of Fashion",
-      description: "Don't call she Angel..."
+      title: 'The Secrets of Fashion',
+      description: "Don't tell the Angels...",
+      label: '30',
+      image: null
     },
     {
-      image: img2,
-      date: { day: "25", month: "MAR" },
-      title: "Betrayal to Strength",
-      description: "Every broken piece creates new power..."
+      title: 'Betrayal to Strength',
+      description: 'Every broken piece creates new power...',
+      label: 'Featured',
+      image: null
     },
     {
-      image: img3,
-      date: { day: "12", month: "JAN" },
-      title: "Dark Elegance",
-      description: "Luxury meets mystery..."
+      title: 'Dark Elegance',
+      description: 'Luxury meets mystery...',
+      label: 'Latest',
+      image: null
+    },
+    {
+      title: 'Urban Rebellion',
+      description: 'Express your inner voice...',
+      label: 'Trending',
+      image: null
+    },
+    {
+      title: 'Ethereal Dreams',
+      description: 'Where fantasy meets reality...',
+      label: 'New',
+      image: null
     }
   ];
 
   return (
-    <div className="bg-black text-white">
-      <FeaturedSlider />
+    <div className="home-page">
+      <HeroVideo />
+      <FeaturedSlider designs={featuredDesigns} />
       <EmotionIntro />
-
-      {/* 🔼 CARD SECTION YUXARI */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-10 py-16 max-w-7xl mx-auto">
-        {cards.map((card, index) => (
-          <DesignCard key={index} {...card} />
-        ))}
-      </div>
-
-      {/* 🔽 FEATURED DESIGNS AŞAĞI */}
-      <div className="mt-10">
-        <FeaturedDesigns />
-      </div>
     </div>
   );
-};
-
-export default Home;
+}
