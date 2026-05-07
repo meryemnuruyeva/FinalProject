@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import DesignCard from './DesignCard';
 
-export default function FeaturedSlider({ designs }) {
+export default function FeaturedSlider({ designs, title = 'Featured Collections', subtitle = 'Explore our finest designs' }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -16,8 +16,8 @@ export default function FeaturedSlider({ designs }) {
     <section className="featured-slider">
       <div className="container">
         <div className="slider-header">
-          <h2 className="section-title">Featured Collections</h2>
-          <p className="section-subtitle">Explore our finest designs</p>
+          <h2 className="section-title">{title}</h2>
+          <p className="section-subtitle">{subtitle}</p>
         </div>
 
         <div className="slider-wrapper">

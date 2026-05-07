@@ -7,6 +7,7 @@ import Register from "../pages/Register";
 import Profile from "../pages/Profile";
 import CreateDesign from "../pages/CreateDesign";
 import Explore from "../pages/Explore";
+import DesignDetail from "../pages/DesignDetail";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "explore", element: <Explore /> },
+      { path: "design/:designId", element: <DesignDetail /> },
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
       { path: "profile", element: <Profile /> },
