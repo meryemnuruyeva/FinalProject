@@ -13,7 +13,7 @@ export default function EmotionIntro() {
               Fashion is not just what you wear, it’s who you become.
             </p>
             <Link to="/video" className="btn-primary">
-              Duymeye
+              Discover the Story
             </Link>
           </div>
         </div>

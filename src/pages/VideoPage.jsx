@@ -6,7 +6,6 @@ export default function VideoPage() {
       <div className="container">
         <div className="video-page-content">
           <div className="video-copy">
-            <span className="detail-label">Duymeye</span>
             <h1>Listen to the Story</h1>
             <p>
               Experience the mood and emotion behind the design with this
