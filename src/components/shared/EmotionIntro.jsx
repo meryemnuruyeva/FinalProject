@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 export default function EmotionIntro() {
   return (
     <section className="emotion-intro">
@@ -10,7 +12,9 @@ export default function EmotionIntro() {
               Every piece tells a story — a moment, a feeling, a transformation.
               Fashion is not just what you wear, it’s who you become.
             </p>
-            <button className="btn-primary">Explore More</button>
+            <Link to="/video" className="btn-primary">
+              Duymeye
+            </Link>
           </div>
         </div>
       </div>

@@ -41,10 +41,7 @@ export const designDetails = [
     details: [
       'Designer: The dress was designed by Greek fashion designer Christina Stambolian.',
       'Features: This black silk cocktail dress was considered extremely bold by royal family standards because of its body-hugging silhouette, asymmetrical hemline, and off-the-shoulder neckline.',
-      'Color Symbolism: Within the royal family, black was traditionally worn mainly for mourning occasions. Diana’s choice of this color was interpreted as a symbol of her freedom from royal family rules and expectations.',
-      'Structured tailoring meets fluid silhouettes for a commanding presence.',
-      'Metallic accents sharpen the composition without losing softness.',
-      'An ode to resilience, built for both stage and city streets.'
+      'Color Symbolism: Within the royal family, black was traditionally worn mainly for mourning occasions. Diana’s choice of this color was interpreted as a symbol of her freedom from royal family rules and expectations.'
     ]
   },
   {
